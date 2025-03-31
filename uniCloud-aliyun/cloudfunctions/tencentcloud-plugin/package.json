@@ -1,0 +1,18 @@
+{
+    "name": "tencentcloud-uniapp-plugin-scf-template",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "axios": ">=0.21.1"
+    },
+    "cloudfunction-config": {
+        "memorySize": 512,
+        "timeout": 5,
+        "path": "",
+        "runtime": "Nodejs12"
+    },
+    "origin-plugin-dev-name": "tencentcloud-plugin-scf-template",
+    "origin-plugin-version": "1.3.8",
+    "plugin-dev-name": "tencentcloud-plugin-scf-template",
+    "plugin-version": "1.3.8"
+}

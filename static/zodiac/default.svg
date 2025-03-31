@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <style>
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes pulse {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+    
+    @keyframes orbit {
+      from { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+      to { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+    }
+    
+    .star {
+      animation: pulse 3s infinite ease-in-out;
+    }
+    
+    .star-orbit {
+      transform-origin: 400px 300px;
+      animation: orbit 30s infinite linear;
+    }
+    
+    .zodiac-circle {
+      animation: rotate 60s infinite linear;
+    }
+  </style>
+  
+  <!-- Background gradient -->
+  <defs>
+    <radialGradient id="bg-gradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#1A2980" />
+      <stop offset="100%" style="stop-color:#000000" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Stars background -->
+  <g>
+    <circle cx="100" cy="150" r="2" fill="white" class="star" />
+    <circle cx="200" cy="250" r="1.5" fill="white" class="star" />
+    <circle cx="300" cy="100" r="2" fill="white" class="star" />
+    <circle cx="400" cy="450" r="1" fill="white" class="star" />
+    <circle cx="500" cy="200" r="2" fill="white" class="star" />
+    <circle cx="600" cy="350" r="1.5" fill="white" class="star" />
+    <circle cx="700" cy="150" r="1" fill="white" class="star" />
+    <circle cx="150" cy="450" r="2" fill="white" class="star" />
+    <circle cx="250" cy="350" r="1" fill="white" class="star" />
+    <circle cx="350" cy="250" r="2" fill="white" class="star" />
+    <circle cx="450" cy="150" r="1.5" fill="white" class="star" />
+    <circle cx="550" cy="400" r="1" fill="white" class="star" />
+    <circle cx="650" cy="300" r="2" fill="white" class="star" />
+    <circle cx="750" cy="500" r="1" fill="white" class="star" />
+  </g>
+  
+  <!-- Zodiac wheel -->
+  <g class="zodiac-circle" transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#436EEE" stroke-width="2" opacity="0.2" />
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#436EEE" stroke-width="1" opacity="0.4" />
+    
+    <!-- Zodiac symbols positioned in a circle -->
+    <g transform="rotate(0)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♈</text>
+    </g>
+    <g transform="rotate(30)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♉</text>
+    </g>
+    <g transform="rotate(60)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♊</text>
+    </g>
+    <g transform="rotate(90)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♋</text>
+    </g>
+    <g transform="rotate(120)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♌</text>
+    </g>
+    <g transform="rotate(150)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♍</text>
+    </g>
+    <g transform="rotate(180)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♎</text>
+    </g>
+    <g transform="rotate(210)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♏</text>
+    </g>
+    <g transform="rotate(240)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♐</text>
+    </g>
+    <g transform="rotate(270)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♑</text>
+    </g>
+    <g transform="rotate(300)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♒</text>
+    </g>
+    <g transform="rotate(330)">
+      <path d="M 140,0 L 160,0" stroke="white" stroke-width="1" />
+      <text x="170" y="5" fill="white" font-size="12">♓</text>
+    </g>
+  </g>
+  
+  <!-- Orbiting stars -->
+  <g>
+    <circle cx="0" cy="0" r="5" fill="#FFF" class="star-orbit" />
+    <circle cx="0" cy="0" r="3" fill="#FFF" class="star-orbit" style="animation-delay: -5s" />
+    <circle cx="0" cy="0" r="4" fill="#FFF" class="star-orbit" style="animation-delay: -10s" />
+    <circle cx="0" cy="0" r="2" fill="#FFF" class="star-orbit" style="animation-delay: -15s" />
+  </g>
+  
+  <!-- Center star symbol -->
+  <g transform="translate(400, 300)">
+    <path d="M 0,-50 L 15,-15 L 50,0 L 15,15 L 0,50 L -15,15 L -50,0 L -15,-15 Z" 
+          fill="none" stroke="#FFF" stroke-width="2" opacity="0.8" />
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#FFF" stroke-width="1" opacity="0.6" />
+  </g>
+</svg> 

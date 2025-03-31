@@ -1,0 +1,1 @@
+"use strict";const n=require("../../common/vendor.js"),e={data:()=>({}),methods:{onOpeningEnd(){n.index.navigateBack()}}};const o=n._export_sfc(e,[["render",function(e,o,t,r,a,c){return{a:n.o(((...n)=>c.onOpeningEnd&&c.onOpeningEnd(...n)))}}]]);wx.createPage(o);

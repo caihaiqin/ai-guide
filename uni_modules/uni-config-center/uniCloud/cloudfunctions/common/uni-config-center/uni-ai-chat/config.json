@@ -1,0 +1,15 @@
+{
+	"contentSecurity": false,
+	"spentScore": 0,
+	"earnedScore": {
+		"ad": 3,
+		"price": 3
+	},
+	"llm": {
+		"provider": "deepseek",
+		"apiKey": "sk-8d4130ab5bbc479996bcd05a03fd99fb"
+	},
+	"chatCompletionOptions": {
+		"tokensToGenerate": 512
+	}
+}

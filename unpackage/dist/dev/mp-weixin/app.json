@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/opening/index",
+    "pages/guide/guide"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#a1bdd8",
+    "backgroundColor": "#a1bdd8"
+  },
+  "networkTimeout": {
+    "request": 600000
+  },
+  "usingComponents": {}
+}

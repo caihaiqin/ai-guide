@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["zodiac-package/pages/test-zodiac/index.vue?type=page"],"sourcesContent":["import MiniProgramPage from '/Users/caihaiqin/dev/uniapp-projects/uni-ai-chat/zodiac-package/pages/test-zodiac/index.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AACA,GAAG,WAAW,eAAe;"}
